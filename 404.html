@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to New Domain...</title>
+  <script>
+    // Catches old URLs (e.g., /academic-timeline.html) and accurately maps them to the new domain
+    var newDomain = "https://sushmaakoju.github.io";
+    var targetUrl = newDomain + window.location.pathname + window.location.search;
+    window.location.replace(targetUrl);
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the updated portfolio site... If nothing happens, <a id="redirect-link" href="https://sushmaakoju.github.io">click here</a>.</p>
+  <script>
+    document.getElementById("redirect-link").href = "https://sushmaakoju.github.io" + window.location.pathname + window.location.search;
+  </script>
+</body>
+</html>
